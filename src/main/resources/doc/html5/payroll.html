@@ -424,158 +424,49 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">request</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">POST /distribution HTTP/1.1
-Content-Type: application/json
-Host: localhost:8080
-Content-Length: 260
-
-{
-  "sourceAccountNumber" : "S1R2C3A4C5C6",
-  "payrollPayments" : [ {
-    "customerIdentifier" : "flauna",
-    "employer" : "The Shop",
-    "salary" : 1234.56
-  }, {
-    "customerIdentifier" : "flauna",
-    "employer" : "The Tank",
-    "salary" : 14.54
-  } ]
-}</code></pre>
+<p>Unresolved directive in payroll.adoc - include::/home/ebenezergraham/apache/fineract-cn-payroll/component-test/build/doc/generated-snippets/test-payroll/document-distribute-payments/http-request.adoc[]</p>
 </div>
-</div>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">response</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 202 Accepted</code></pre>
-</div>
+<p>Unresolved directive in payroll.adoc - include::/home/ebenezergraham/apache/fineract-cn-payroll/component-test/build/doc/generated-snippets/test-payroll/document-distribute-payments/http-response.adoc[]</p>
 </div>
 <hr>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">request</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">GET /distribution HTTP/1.1
-Accept: */*
-Content-Type: application/json
-Host: localhost:8080</code></pre>
+<p>Unresolved directive in payroll.adoc - include::/home/ebenezergraham/apache/fineract-cn-payroll/component-test/build/doc/generated-snippets/test-payroll/document-fetch-distribution-history/http-request.adoc[]</p>
 </div>
-</div>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">response</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 200 OK
-Content-Type: application/json;charset=UTF-8
-Content-Length: 335
-
-[ {
-  "identifier" : "GTLCCyQRhchlFB0OybxHn6ShgtoqLOmK",
-  "sourceAccountNumber" : "S9R7C5A3C1C",
-  "createdBy" : "mage",
-  "createdOn" : "2019-01-08T06:45:02.474Z"
-}, {
-  "identifier" : "pQRtAZX15nekceMNCPsNVmDMdAUVfI5T",
-  "sourceAccountNumber" : "S1R2C3A4C5C6",
-  "createdBy" : "mage",
-  "createdOn" : "2019-01-08T06:45:01.943Z"
-} ]</code></pre>
-</div>
+<p>Unresolved directive in payroll.adoc - include::/home/ebenezergraham/apache/fineract-cn-payroll/component-test/build/doc/generated-snippets/test-payroll/document-fetch-distribution-history/http-response.adoc[]</p>
 </div>
 <hr>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">request</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">GET /distribution/GysdG6N8eynMuCITQY9PMPNyVeQBza6E/payments HTTP/1.1
-Accept: */*
-Content-Type: application/json
-Host: localhost:8080</code></pre>
+<p>Unresolved directive in payroll.adoc - include::/home/ebenezergraham/apache/fineract-cn-payroll/component-test/build/doc/generated-snippets/test-payroll/document-fetch-payments/http-request.adoc[]</p>
 </div>
-</div>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">response</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 200 OK
-Content-Type: application/json;charset=UTF-8
-Content-Length: 208
-
-{
-  "payrollPayments" : [ {
-    "customerIdentifier" : "ngone",
-    "employer" : "Nkwane",
-    "salary" : 945.0,
-    "processed" : true,
-    "message" : null
-  } ],
-  "totalPages" : 1,
-  "totalElements" : 1
-}</code></pre>
-</div>
+<p>Unresolved directive in payroll.adoc - include::/home/ebenezergraham/apache/fineract-cn-payroll/component-test/build/doc/generated-snippets/test-payroll/document-fetch-payments/http-response.adoc[]</p>
 </div>
 <hr>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">request</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">GET /customers/faundCostoma/payroll HTTP/1.1
-Accept: application/json
-Content-Type: application/json
-Host: localhost:8080</code></pre>
+<p>Unresolved directive in payroll.adoc - include::/home/ebenezergraham/apache/fineract-cn-payroll/component-test/build/doc/generated-snippets/test-payroll/document-find-payroll-configuration/http-request.adoc[]</p>
 </div>
-</div>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">response</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 200 OK
-Content-Type: application/json;charset=UTF-8
-Content-Length: 364
-
-{
-  "mainAccountNumber" : "AB12345",
-  "payrollAllocations" : [ {
-    "accountNumber" : "BAH97531",
-    "amount" : 73.0,
-    "proportional" : true
-  }, {
-    "accountNumber" : "CAG24680",
-    "amount" : 21.0,
-    "proportional" : true
-  } ],
-  "createdBy" : "mage",
-  "createdOn" : "2019-01-08T06:45:03.805Z",
-  "lastModifiedBy" : null,
-  "lastModifiedOn" : null
-}</code></pre>
-</div>
+<p>Unresolved directive in payroll.adoc - include::/home/ebenezergraham/apache/fineract-cn-payroll/component-test/build/doc/generated-snippets/test-payroll/document-find-payroll-configuration/http-response.adoc[]</p>
 </div>
 <hr>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">request</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">PUT /customers/customerOne/payroll HTTP/1.1
-Accept: application/json
-Content-Type: application/json
-Host: localhost:8080
-Content-Length: 253
-
-{
-  "mainAccountNumber" : "12345678910",
-  "payrollAllocations" : [ {
-    "accountNumber" : "9876543210",
-    "amount" : 5500.0,
-    "proportional" : true
-  }, {
-    "accountNumber" : "24681097531",
-    "amount" : 43.0,
-    "proportional" : true
-  } ]
-}</code></pre>
+<p>Unresolved directive in payroll.adoc - include::/home/ebenezergraham/apache/fineract-cn-payroll/component-test/build/doc/generated-snippets/test-payroll/document-set-payroll-configuration/http-request.adoc[]</p>
 </div>
-</div>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">response</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 202 Accepted</code></pre>
-</div>
+<p>Unresolved directive in payroll.adoc - include::/home/ebenezergraham/apache/fineract-cn-payroll/component-test/build/doc/generated-snippets/test-payroll/document-set-payroll-configuration/http-response.adoc[]</p>
 </div>
 <hr>
 </div>
@@ -583,7 +474,7 @@ Content-Length: 253
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-01-08 08:46:47 +02:00
+Last updated 2019-07-11 16:52:13 +04:00
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">

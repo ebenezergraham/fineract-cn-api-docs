@@ -424,407 +424,130 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">request</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">POST /teller/tellerpUM/transactions/ImrGicYWqUAeSoMji5dSE8W09N1Qcj1h HTTP/1.1
-Content-Type: application/json
-Accept: application/json
-Host: localhost:8080
-
-command=CANCEL&amp;charges=excluded</code></pre>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-cancel-transaction/http-request.adoc[]</p>
 </div>
-</div>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">response</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 202 Accepted</code></pre>
-</div>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-cancel-transaction/http-response.adoc[]</p>
 </div>
 <hr>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">request</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">POST /teller/tellerpUM/transactions HTTP/1.1
-Content-Type: application/json
-Accept: application/json
-Host: localhost:8080
-Content-Length: 250
-
-{
-  "transactionType" : "ACCC",
-  "transactionDate" : "2019-01-08T06:46:25.861Z",
-  "customerIdentifier" : "CustomerTwo",
-  "productIdentifier" : "product102",
-  "customerAccountIdentifier" : "Customer002",
-  "clerk" : "homer",
-  "amount" : 1234.56
-}</code></pre>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-close-account/http-request.adoc[]</p>
 </div>
-</div>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">response</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 200 OK
-Content-Type: application/json;charset=UTF-8
-Content-Length: 118
-
-{
-  "tellerTransactionIdentifier" : "9zerUltOdFxNurIoG02k3PWk3fPOC98X",
-  "totalAmount" : 1234.56,
-  "charges" : [ ]
-}</code></pre>
-</div>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-close-account/http-response.adoc[]</p>
 </div>
 <hr>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">request</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">POST /offices/antananarivo/teller/7239/commands HTTP/1.1
-Content-Type: application/json
-Accept: application/json
-Host: localhost:8080
-Content-Length: 91
-
-{
-  "action" : "CLOSE",
-  "adjustment" : "NONE",
-  "assignedEmployeeIdentifier" : "Antah"
-}</code></pre>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-close-teller/http-request.adoc[]</p>
 </div>
-</div>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">response</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 202 Accepted</code></pre>
-</div>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-close-teller/http-response.adoc[]</p>
 </div>
 <hr>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">request</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">POST /teller/tellerpUM/transactions/e24C2TrK3hNZGdGnnnzcTouIuQXiJAzl HTTP/1.1
-Content-Type: application/json
-Accept: application/json
-Host: localhost:8080
-
-command=CONFIRM&amp;charges=included</code></pre>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-confirm-transaction/http-request.adoc[]</p>
 </div>
-</div>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">response</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 202 Accepted</code></pre>
-</div>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-confirm-transaction/http-response.adoc[]</p>
 </div>
 <hr>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">request</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">POST /offices/office1234/teller/ HTTP/1.1
-Content-Type: application/json
-Accept: application/json
-Host: localhost:8080
-Content-Length: 317
-
-{
-  "code" : "1234",
-  "password" : "password",
-  "cashdrawLimit" : 5000000,
-  "tellerAccountIdentifier" : "TEL123BA",
-  "vaultAccountIdentifier" : "TEL123BA",
-  "chequesReceivableAccount" : "CHA2018XYZ",
-  "cashOverShortAccount" : "CHA2018XYZ",
-  "denominationRequired" : false,
-  "assignedEmployee" : "Nakuve Lah"
-}</code></pre>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-create-teller/http-request.adoc[]</p>
 </div>
-</div>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">response</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 202 Accepted</code></pre>
-</div>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-create-teller/http-response.adoc[]</p>
 </div>
 <hr>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">request</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">DELETE /offices/kakeOne/teller/9876 HTTP/1.1
-Content-Type: application/json
-Accept: application/json
-Host: localhost:8080</code></pre>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-delete-teller/http-request.adoc[]</p>
 </div>
-</div>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">response</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 202 Accepted</code></pre>
-</div>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-delete-teller/http-response.adoc[]</p>
 </div>
 <hr>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">request</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">GET /offices/office247/teller/ HTTP/1.1
-Content-Type: application/json
-Accept: */*
-Host: localhost:8080</code></pre>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-fetch-tellers/http-request.adoc[]</p>
 </div>
-</div>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">response</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 200 OK
-Content-Type: application/json;charset=UTF-8
-Content-Length: 1032
-
-[ {
-  "code" : "412389",
-  "password" : null,
-  "cashdrawLimit" : 4000000.0,
-  "tellerAccountIdentifier" : "TEL412389C",
-  "vaultAccountIdentifier" : "TEL412389C",
-  "chequesReceivableAccount" : "CHA2018ABC",
-  "cashOverShortAccount" : "CHA2018ABC",
-  "denominationRequired" : false,
-  "assignedEmployee" : "Chi Ndi",
-  "state" : "CLOSED",
-  "createdBy" : "homer",
-  "createdOn" : "2019-01-08T06:46:32.248Z",
-  "lastModifiedBy" : null,
-  "lastModifiedOn" : null,
-  "lastOpenedBy" : null,
-  "lastOpenedOn" : null
-}, {
-  "code" : "512389",
-  "password" : null,
-  "cashdrawLimit" : 5000000.0,
-  "tellerAccountIdentifier" : "TEL512389D",
-  "vaultAccountIdentifier" : "TEL512389D",
-  "chequesReceivableAccount" : "DHA2018ABD",
-  "cashOverShortAccount" : "DHA2018ABD",
-  "denominationRequired" : false,
-  "assignedEmployee" : "Chia Chenjo",
-  "state" : "CLOSED",
-  "createdBy" : "homer",
-  "createdOn" : "2019-01-08T06:46:32.299Z",
-  "lastModifiedBy" : null,
-  "lastModifiedOn" : null,
-  "lastOpenedBy" : null,
-  "lastOpenedOn" : null
-} ]</code></pre>
-</div>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-fetch-tellers/http-response.adoc[]</p>
 </div>
 <hr>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">request</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">GET /offices/office412/teller/4123 HTTP/1.1
-Content-Type: application/json
-Accept: */*
-Host: localhost:8080</code></pre>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-find-teller/http-request.adoc[]</p>
 </div>
-</div>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">response</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 200 OK
-Content-Type: application/json;charset=UTF-8
-Content-Length: 500
-
-{
-  "code" : "4123",
-  "password" : null,
-  "cashdrawLimit" : 4.0,
-  "tellerAccountIdentifier" : "TEL412AC",
-  "vaultAccountIdentifier" : "TEL412AC",
-  "chequesReceivableAccount" : "CHA2018AB",
-  "cashOverShortAccount" : "CHA2018AB",
-  "denominationRequired" : false,
-  "assignedEmployee" : "Chi Ndohah",
-  "state" : "CLOSED",
-  "createdBy" : "homer",
-  "createdOn" : "2019-01-08T06:46:25.385Z",
-  "lastModifiedBy" : null,
-  "lastModifiedOn" : null,
-  "lastOpenedBy" : null,
-  "lastOpenedOn" : null
-}</code></pre>
-</div>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-find-teller/http-response.adoc[]</p>
 </div>
 <hr>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">request</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">GET /offices/fesse/teller/kombone987/balance HTTP/1.1
-Content-Type: application/json
-Accept: */*
-Host: localhost:8080</code></pre>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-get-balance/http-request.adoc[]</p>
 </div>
-</div>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">response</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 200 OK
-Content-Type: application/json;charset=UTF-8
-Content-Length: 173
-
-{
-  "day" : null,
-  "cashOnHand" : 0,
-  "cashReceivedTotal" : 0,
-  "cashDisbursedTotal" : 0,
-  "chequesReceivedTotal" : 0,
-  "cashEntries" : null,
-  "chequeEntries" : null
-}</code></pre>
-</div>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-get-balance/http-response.adoc[]</p>
 </div>
 <hr>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">request</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">POST /teller/tellerpUM/transactions HTTP/1.1
-Content-Type: application/json
-Accept: application/json
-Host: localhost:8080
-Content-Length: 250
-
-{
-  "transactionType" : "ACCO",
-  "transactionDate" : "2019-01-08T06:46:31.542Z",
-  "customerIdentifier" : "CustomerOne",
-  "productIdentifier" : "product101",
-  "customerAccountIdentifier" : "Customer001",
-  "clerk" : "homer",
-  "amount" : 1234.56
-}</code></pre>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-open-account/http-request.adoc[]</p>
 </div>
-</div>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">response</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 200 OK
-Content-Type: application/json;charset=UTF-8
-Content-Length: 118
-
-{
-  "tellerTransactionIdentifier" : "cIDc9Xkm4UUfgnsqUX1rAjVmA9pVhaJI",
-  "totalAmount" : 1234.56,
-  "charges" : [ ]
-}</code></pre>
-</div>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-open-account/http-response.adoc[]</p>
 </div>
 <hr>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">request</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">POST /offices/moritavo/teller/689/commands HTTP/1.1
-Content-Type: application/json
-Accept: application/json
-Host: localhost:8080
-Content-Length: 89
-
-{
-  "action" : "OPEN",
-  "adjustment" : "NONE",
-  "assignedEmployeeIdentifier" : "Ashu"
-}</code></pre>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-open-teller/http-request.adoc[]</p>
 </div>
-</div>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">response</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 202 Accepted</code></pre>
-</div>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-open-teller/http-response.adoc[]</p>
 </div>
 <hr>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">request</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">POST /teller/tellerpUM HTTP/1.1
-Content-Type: application/json
-Accept: application/json
-Host: localhost:8080
-
-command=PAUSE</code></pre>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-pause-teller/http-request.adoc[]</p>
 </div>
-</div>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">response</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 202 Accepted</code></pre>
-</div>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-pause-teller/http-response.adoc[]</p>
 </div>
 <hr>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">request</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">POST /teller/tellerpUM/drawer HTTP/1.1
-Content-Type: application/json
-Accept: application/json
-Host: localhost:8080
-Content-Length: 56
-
-{"employeeIdentifier":"homer","password":"GXwNNSKW5DUC"}</code></pre>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-unlock-drawer/http-request.adoc[]</p>
 </div>
-</div>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">response</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 200 OK
-Content-Type: application/json;charset=UTF-8
-Content-Length: 559
-
-{
-  "code" : "tellerpUM",
-  "password" : null,
-  "cashdrawLimit" : 10000.0,
-  "tellerAccountIdentifier" : "telAccGAa",
-  "vaultAccountIdentifier" : "telAccydI",
-  "chequesReceivableAccount" : "cheqRecVSL",
-  "cashOverShortAccount" : "cashOSAccCYm",
-  "denominationRequired" : false,
-  "assignedEmployee" : "homer",
-  "state" : "ACTIVE",
-  "createdBy" : "homer",
-  "createdOn" : "2019-01-08T06:46:23.799Z",
-  "lastModifiedBy" : "homer",
-  "lastModifiedOn" : "2019-01-08T06:46:25.85Z",
-  "lastOpenedBy" : "homer",
-  "lastOpenedOn" : "2019-01-08T06:46:23.975Z"
-}</code></pre>
-</div>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-unlock-drawer/http-response.adoc[]</p>
 </div>
 <hr>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">request</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">PUT /offices/wakanda/teller/6789 HTTP/1.1
-Content-Type: application/json
-Accept: application/json
-Host: localhost:8080
-Content-Length: 319
-
-{
-  "code" : "6789",
-  "password" : "aUYKkqobN",
-  "cashdrawLimit" : 15000.0,
-  "tellerAccountIdentifier" : "TEL6789Z1",
-  "vaultAccountIdentifier" : "TEL6789Z1",
-  "chequesReceivableAccount" : "ZHX2018ABZ",
-  "cashOverShortAccount" : "ZHX2018ABZ",
-  "denominationRequired" : true,
-  "assignedEmployee" : "Dioh Dione"
-}</code></pre>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-update-teller/http-request.adoc[]</p>
 </div>
-</div>
-<div class="listingblock">
+<div class="paragraph">
 <div class="title">response</div>
-<div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 202 Accepted</code></pre>
-</div>
+<p>Unresolved directive in teller.adoc - include::/home/ebenezergraham/apache/fineract-cn-teller/component-test/build/doc/generated-snippets/test-teller/document-update-teller/http-response.adoc[]</p>
 </div>
 <hr>
 </div>
@@ -832,7 +555,7 @@ Content-Length: 319
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-01-08 08:46:48 +02:00
+Last updated 2019-07-11 16:52:13 +04:00
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
